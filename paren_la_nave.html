@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>¡Paren la nave, que me bajo!</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101827;
+      --panel: #1b293d;
+      --panel2: #24364e;
+      --text: #f5f7fb;
+      --muted: #aab8ca;
+      --accent: #ffca55;
+      --green: #65d69a;
+      --red: #ff7777;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 22px 16px 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background:
+        radial-gradient(ellipse at top, #263b59 0%, transparent 55%),
+        var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .app { width: min(100%, 560px); }
+    header { text-align: center; margin-bottom: 22px; }
+    .rocket { font-size: 2.8rem; line-height: 1.1; }
+    h1 {
+      margin: 8px 0 5px;
+      font-size: clamp(1.65rem, 7vw, 2.35rem);
+      line-height: 1.05;
+      letter-spacing: -1px;
+    }
+    header p { margin: 8px 0 0; color: var(--muted); font-size: .95rem; }
+    .card {
+      background: rgba(27, 41, 61, .96);
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 24px;
+      padding: clamp(19px, 5vw, 28px);
+      box-shadow: 0 18px 55px rgba(0,0,0,.28);
+    }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      font-size: .83rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+    .counter {
+      background: var(--panel2);
+      border-radius: 999px;
+      padding: 7px 11px;
+      white-space: nowrap;
+    }
+    .question {
+      min-height: 180px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 26px 4px;
+      font-size: clamp(1.45rem, 5.5vw, 2rem);
+      line-height: 1.28;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+    .answer-area {
+      border-radius: 17px;
+      background: rgba(0,0,0,.16);
+      padding: 17px;
+      text-align: center;
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+    }
+    .answer-label {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: .75rem;
+      font-weight: 800;
+    }
+    .answer {
+      color: var(--accent);
+      font-size: clamp(1.8rem, 8vw, 2.7rem);
+      font-weight: 850;
+      line-height: 1.15;
+      overflow-wrap: anywhere;
+    }
+    .hidden-answer { color: var(--muted); font-size: 1rem; font-weight: 500; }
+    button, input { font: inherit; }
+    button {
+      border: 0;
+      border-radius: 14px;
+      min-height: 52px;
+      padding: 13px 16px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform .08s ease, filter .15s ease;
+    }
+    button:active { transform: scale(.98); }
+    button:disabled { opacity: .45; cursor: not-allowed; }
+    .reveal {
+      width: 100%;
+      margin-top: 15px;
+      background: var(--accent);
+      color: #252015;
+      font-size: 1.03rem;
+    }
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .secondary { background: var(--panel2); color: var(--text); }
+    .random { background: var(--green); color: #10251b; }
+    .tools {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .tools button { min-height: 45px; font-size: .9rem; }
+    .picker {
+      display: flex;
+      gap: 8px;
+      margin-top: 18px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255,255,255,.1);
+    }
+    .picker input {
+      min-width: 0;
+      width: 100%;
+      background: #101b2b;
+      color: var(--text);
+      border: 1px solid #40536c;
+      border-radius: 12px;
+      padding: 0 13px;
+      outline: none;
+    }
+    .picker input:focus { border-color: var(--accent); }
+    .picker button { background: #40536c; color: white; min-width: 105px; }
+    .status {
+      color: var(--muted);
+      font-size: .82rem;
+      text-align: center;
+      margin: 15px 0 0;
+      min-height: 1.2em;
+    }
+    .file-input { display: none; }
+    .footer {
+      text-align: center;
+      color: #8191a7;
+      font-size: .75rem;
+      margin-top: 18px;
+    }
+    @media (max-width: 380px) {
+      .controls, .tools { grid-template-columns: 1fr; }
+      .question { min-height: 150px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="rocket" aria-hidden="true">🚀</div>
+      <h1>¡PAREN LA NAVE,<br>QUE ME BAJO!</h1>
+      <p>¿Te atreves a apostar?</p>
+    </header>
+
+    <section class="card" aria-label="Juego">
+      <div class="topline">
+        <span id="questionNumber">Pregunta 1</span>
+        <span class="counter" id="counter">0 / 0 usadas</span>
+      </div>
+
+      <div class="question" id="questionText" aria-live="polite">
+        Cargando pregunta...
+      </div>
+
+      <div class="answer-area" aria-live="polite">
+        <div class="answer-label">Respuesta correcta</div>
+        <div class="answer hidden-answer" id="answerText">¿Preparados?</div>
+      </div>
+
+      <button class="reveal" id="revealButton">👀 PULSA PARA REVELAR</button>
+
+      <div class="controls">
+        <button class="secondary" id="previousButton">← Anterior</button>
+        <button class="secondary" id="nextButton">Siguiente →</button>
+      </div>
+
+      <div class="tools">
+        <button class="random" id="randomButton">🎲 Pregunta aleatoria</button>
+        <button class="secondary" id="resetButton">↻ Reiniciar partida</button>
+      </div>
+
+      <form class="picker" id="pickerForm">
+        <input id="questionInput" type="number" min="1" placeholder="N.º de pregunta" aria-label="Número de pregunta">
+        <button type="submit">Ir a pregunta</button>
+      </form>
+
+      <div class="tools">
+        <button class="secondary" id="loadButton">📂 Cargar preguntas JSON</button>
+        <button class="secondary" id="demoButton">Usar preguntas de prueba</button>
+      </div>
+      <input class="file-input" type="file" id="fileInput" accept=".json,application/json">
+      <p class="status" id="status" role="status"></p>
+    </section>
+
+    <p class="footer">Las respuestas solo aparecen al pulsar revelar.</p>
+  </main>
+
+  <script>
+    // Preguntas ficticias para probar la aplicación. Se sustituirán al cargar el JSON definitivo.
+    const demoQuestions = [
+      { id: 1, pregunta: "¿Cuántas hormigas harían falta para levantar un coche pequeño?", respuesta: "125.000" },
+      { id: 2, pregunta: "¿Cuántos litros de saliva produce una persona a lo largo de su vida?", respuesta: "25.000 litros" },
+      { id: 3, pregunta: "¿Cuántas veces late el corazón de una persona en un día?", respuesta: "100.000 veces" },
+      { id: 4, pregunta: "¿Cuántos granos de arroz caben aproximadamente en una bañera?", respuesta: "1.500.000 granos" },
+      { id: 5, pregunta: "¿Cuántos pelos puede tener una barba muy poblada?", respuesta: "30.000 pelos" }
+    ];
+
+    let questions = [...demoQuestions];
+    let currentIndex = 0;
+    let usedIds = new Set();
+    let revealed = false;
+
+    const questionNumber = document.getElementById("questionNumber");
+    const counter = document.getElementById("counter");
+    const questionText = document.getElementById("questionText");
+    const answerText = document.getElementById("answerText");
+    const revealButton = document.getElementById("revealButton");
+    const previousButton = document.getElementById("previousButton");
+    const nextButton = document.getElementById("nextButton");
+    const randomButton = document.getElementById("randomButton");
+    const resetButton = document.getElementById("resetButton");
+    const questionInput = document.getElementById("questionInput");
+    const pickerForm = document.getElementById("pickerForm");
+    const loadButton = document.getElementById("loadButton");
+    const demoButton = document.getElementById("demoButton");
+    const fileInput = document.getElementById("fileInput");
+    const status = document.getElementById("status");
+
+    function render() {
+      if (!questions.length) {
+        questionText.textContent = "No hay preguntas cargadas.";
+        answerText.textContent = "Carga un archivo JSON para empezar.";
+        answerText.className = "answer hidden-answer";
+        questionNumber.textContent = "Sin preguntas";
+        counter.textContent = "0 / 0 usadas";
+        revealButton.disabled = true;
+        previousButton.disabled = true;
+        nextButton.disabled = true;
+        randomButton.disabled = true;
+        return;
+      }
+
+      const q = questions[currentIndex];
+      questionNumber.textContent = `Pregunta ${currentIndex + 1}`;
+      counter.textContent = `${usedIds.size} / ${questions.length} usadas`;
+      questionText.textContent = q.pregunta;
+      questionInput.value = currentIndex + 1;
+
+      if (revealed) {
+        answerText.textContent = q.respuesta;
+        answerText.className = "answer";
+        revealButton.textContent = "🙈 OCULTAR RESPUESTA";
+      } else {
+        answerText.textContent = "¿Preparados?";
+        answerText.className = "answer hidden-answer";
+        revealButton.textContent = "👀 PULSA PARA REVELAR";
+      }
+
+      revealButton.disabled = false;
+      previousButton.disabled = currentIndex === 0;
+      nextButton.disabled = currentIndex === questions.length - 1;
+      randomButton.disabled = usedIds.size >= questions.length;
+    }
+
+    function goTo(index) {
+      if (index < 0 || index >= questions.length) return;
+      currentIndex = index;
+      revealed = false;
+      usedIds.add(questions[currentIndex].id);
+      status.textContent = "";
+      render();
+    }
+
+    revealButton.addEventListener("click", () => {
+      if (!questions.length) return;
+      revealed = !revealed;
+      render();
+    });
+
+    previousButton.addEventListener("click", () => goTo(currentIndex - 1));
+    nextButton.addEventListener("click", () => goTo(currentIndex + 1));
+
+    randomButton.addEventListener("click", () => {
+      const available = questions
+        .map((q, i) => ({ q, i }))
+        .filter(item => !usedIds.has(item.q.id));
+
+      if (!available.length) {
+        status.textContent = "¡Habéis agotado todas las preguntas! Reiniciad la partida.";
+        render();
+        return;
+      }
+
+      const chosen = available[Math.floor(Math.random() * available.length)];
+      goTo(chosen.i);
+    });
+
+    resetButton.addEventListener("click", () => {
+      usedIds.clear();
+      currentIndex = 0;
+      revealed = false;
+      goTo(0);
+      status.textContent = "Partida reiniciada. ¡A jugar!";
+    });
+
+    pickerForm.addEventListener("submit", event => {
+      event.preventDefault();
+      const number = Number(questionInput.value);
+      if (!Number.isInteger(number) || number < 1 || number > questions.length) {
+        status.textContent = `Introduce un número entre 1 y ${questions.length}.`;
+        return;
+      }
+      goTo(number - 1);
+    });
+
+    loadButton.addEventListener("click", () => fileInput.click());
+
+    fileInput.addEventListener("change", async event => {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      try {
+        const text = await file.text();
+        const data = JSON.parse(text);
+
+        if (!Array.isArray(data) || data.length === 0) {
+          throw new Error("El JSON debe contener una lista de preguntas.");
+        }
+
+        const valid = data.every((q, index) =>
+          q &&
+          typeof q.pregunta === "string" && q.pregunta.trim() &&
+          (typeof q.respuesta === "string" || typeof q.respuesta === "number") &&
+          String(q.respuesta).trim() !== ""
+        );
+
+        if (!valid) {
+          throw new Error("Cada pregunta debe tener 'pregunta' y 'respuesta'. Revisa el archivo.");
+        }
+
+        questions = data.map((q, index) => ({
+          id: q.id ?? index + 1,
+          pregunta: q.pregunta.trim(),
+          respuesta: String(q.respuesta).trim()
+        }));
+
+        usedIds.clear();
+        currentIndex = 0;
+        revealed = false;
+        render();
+        status.textContent = `¡Perfecto! Se han cargado ${questions.length} preguntas.`;
+      } catch (error) {
+        status.textContent = `No se pudo cargar el archivo: ${error.message}`;
+      } finally {
+        fileInput.value = "";
+      }
+    });
+
+    demoButton.addEventListener("click", () => {
+      questions = [...demoQuestions];
+      usedIds.clear();
+      currentIndex = 0;
+      revealed = false;
+      render();
+      status.textContent = "Se han cargado las preguntas de prueba.";
+    });
+
+    // Inicio
+    goTo(0);
+  </script>
+</body>
+</html>
