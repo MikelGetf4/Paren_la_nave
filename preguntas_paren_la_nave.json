@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Cuántos baños tiene la Casa Blanca?",
+    "respuesta": "35"
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cuántos productos diferentes tiene McDonald's España en su menú estándar aproximado?",
+    "respuesta": "150"
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cuántos globos de helio estándar (30 cm) hacen falta para levantar a un perro de 30 kg?",
+    "respuesta": "900"
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuántas habitaciones tiene el Palacio de Versalles?",
+    "respuesta": "2300"
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cuántas ventanas tiene el Burj Khalifa?",
+    "respuesta": "24348"
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Cuántas islas tiene aproximadamente Suecia?",
+    "respuesta": "267570"
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Cuántas hormigas hacen falta para igualar el peso de una persona de 80 kg (calculando una hormiga media de 4 mg)?",
+    "respuesta": "20000000"
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cuántas veces habría que doblar un folio estándar (0,1 mm) para alcanzar la distancia a la Luna (384.400 km)?",
+    "respuesta": "42"
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Cuántos Pokémon oficiales existían al finalizar la novena generación?",
+    "respuesta": "1025"
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cuántos escalones tiene el Empire State Building desde la planta baja hasta el piso 102?",
+    "respuesta": "1860"
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Cuántos huesos tiene una jirafa en su cuello?",
+    "respuesta": "7"
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cuántas piezas de Lego se producen aproximadamente al año en el mundo?",
+    "respuesta": "75000000000"
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Cuántas calorías quema una persona media durmiendo durante 8 horas?",
+    "respuesta": "500"
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Cuántos episodios tiene la serie animada Los Simpson hasta finales de 2024 (temporada 35)?",
+    "respuesta": "766"
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Cuántos litros de agua caben en una piscina olímpica estándar?",
+    "respuesta": "2500000"
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cuántos kilómetros mide la Gran Muralla China en su medición oficial más completa?",
+    "respuesta": "21196"
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Cuántos países reconocidos oficialmente por la ONU existen actualmente?",
+    "respuesta": "193"
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Cuántas teclas tiene un piano acústico estándar de cola?",
+    "respuesta": "88"
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cuántos kilómetros hay de circunferencia en la Tierra en el ecuador?",
+    "respuesta": "40075"
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cuántas películas conforman la saga principal de Star Wars (Episodios I a IX)?",
+    "respuesta": "9"
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cuántos dientes permanentes tiene un ser humano adulto sano (incluyendo las muelas del juicio)?",
+    "respuesta": "32"
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Cuántos canales de agua principales cruzan la ciudad de Venecia?",
+    "respuesta": "177"
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cuántos metros de altura tiene la Torre Eiffel (incluyendo la antena)?",
+    "respuesta": "330"
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Cuántos libros componen la saga original de Harry Potter escrita por J.K. Rowling?",
+    "respuesta": "7"
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Cuántos premios Óscar ganó la película El Señor de los Anillos: El Retorno del Rey?",
+    "respuesta": "11"
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Cuántos días dura exactamente un año en el planeta Marte?",
+    "respuesta": "687"
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Cuántos jugadores componen una plantilla oficial inscrita para un Mundial de Fútbol (FIFA Qatar 2022 en adelante)?",
+    "respuesta": "26"
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Cuántos vagones tiene el tren de pasajeros más largo del mundo (récord en Suiza, 2022)?",
+    "respuesta": "100"
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Cuántos metros mide la estatua del Cristo Redentor en Río de Janeiro (incluyendo el pedestal)?",
+    "respuesta": "38"
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cuántos capítulos tiene el manga original de Dragon Ball escrito por Akira Toriyama?",
+    "respuesta": "519"
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Cuántas semanas tiene exactamente un año no bisiesto?",
+    "respuesta": "52"
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cuántos millones de usuarios activos mensuales tiene la plataforma Steam (aproximado 2024)?",
+    "respuesta": "132"
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Cuántos metros de profundidad tiene la fosa de las Marianas (punto Challenger Deep)?",
+    "respuesta": "10935"
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Cuántas estrellas principales componen la constelación de la Osa Mayor?",
+    "respuesta": "7"
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Cuántas horas dura un día completo en el planeta Júpiter?",
+    "respuesta": "10"
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuántas anillas entrelazadas componen el logotipo oficial de los Juegos Olímpicos?",
+    "respuesta": "5"
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Cuántos huesos tiene un gato adulto en su esqueleto?",
+    "respuesta": "230"
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Cuántos kilómetros hay de distancia media entre la Tierra y la Luna?",
+    "respuesta": "384400"
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cuántas caras geométricas tiene un objeto en forma de icosaedro?",
+    "respuesta": "20"
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Cuántos episodios componen la serie completa de Game of Thrones en HBO?",
+    "respuesta": "73"
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Cuántas repisas o estantes tiene el cubo de Rubik clásico de 3x3x3 por cada cara?",
+    "respuesta": "3"
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Cuántos kilómetros mide el río Amazonas en su longitud oficial reconocida?",
+    "respuesta": "6992"
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Cuántos jugadores hay sobre el terreno de juego en un partido oficial de rugby a 15 por equipo?",
+    "respuesta": "15"
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Cuántos litros de sangre bombea aproximadamente el corazón humano adulto en un solo día?",
+    "respuesta": "7500"
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Cuántos parques temáticos oficiales de Disney existen en todo el mundo?",
+    "respuesta": "12"
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Cuántos cuadrados negros hay en un tablero de ajedrez tradicional?",
+    "respuesta": "32"
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Cuántos gramos pesa exactamente una moneda de 1 euro en circulación?",
+    "respuesta": "7.5"
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Cuántos kilómetros de costa tiene aproximadamente Australia?",
+    "respuesta": "25760"
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Cuántos elementos químicos componen la tabla periódica actual hasta el Oganesón (Z=118)?",
+    "respuesta": "118"
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Cuántos millones de copias físicas y digitales ha vendido el videojuego Minecraft (récord histórico)?",
+    "respuesta": "300"
+  },
+  {
+    "id": 51,
+    "pregunta": "¿Cuántas provincias tiene oficialmente el territorio de España?",
+    "respuesta": "50"
+  },
+  {
+    "id": 52,
+    "pregunta": "¿Cuántos grados suman los ángulos interiores de cualquier triángulo plano?",
+    "respuesta": "180"
+  },
+  {
+    "id": 53,
+    "pregunta": "¿Cuántos kilómetros mide el túnel del canal de la Mancha (Eurotúnel) en su tramo submarino?",
+    "respuesta": "38"
+  },
+  {
+    "id": 54,
+    "pregunta": "¿Cuántos bits componen un byte estándar en informática?",
+    "respuesta": "8"
+  },
+  {
+    "id": 55,
+    "pregunta": "¿Cuántos mililitros contiene una lata de refresco estándar en Europa?",
+    "respuesta": "330"
+  },
+  {
+    "id": 56,
+    "pregunta": "¿Cuántos años duró la llamada Guerra de los Cien Años entre los reinos de Inglaterra y Francia?",
+    "respuesta": "116"
+  },
+  {
+    "id": 57,
+    "pregunta": "¿Cuántos lados tiene un polígono geométrico llamado dodecágono?",
+    "respuesta": "12"
+  },
+  {
+    "id": 58,
+    "pregunta": "¿Cuántos millones de toneladas de residuos plásticos se estiman en los océanos globales (estudio medioambiental)?",
+    "respuesta": "150"
+  },
+  {
+    "id": 59,
+    "pregunta": "¿Cuántas lunas o satélites naturales confirmados tiene el planeta Saturno?",
+    "respuesta": "146"
+  },
+  {
+    "id": 60,
+    "pregunta": "¿Cuántos metros mide la altura oficial de la Gran Pirámide de Guiza en la actualidad?",
+    "respuesta": "138.5"
+  },
+  {
+    "id": 61,
+    "pregunta": "¿Cuántos músculos se activan aproximadamente en el cuerpo humano al dar un solo paso al caminar?",
+    "respuesta": "200"
+  },
+  {
+    "id": 62,
+    "pregunta": "¿Cuántas autonomías o comunidades autónomas integran el territorio español?",
+    "respuesta": "17"
+  },
+  {
+    "id": 63,
+    "pregunta": "¿Cuántos milímetros de diámetro tiene una pelota de golf reglamentaria oficial?",
+    "respuesta": "42.67"
+  },
+  {
+    "id": 64,
+    "pregunta": "¿Cuántos kilómetros por hora equivale exactamente 1 Mach (velocidad del sonido en condiciones estándar al nivel del mar)?",
+    "respuesta": "1225"
+  },
+  {
+    "id": 65,
+    "pregunta": "¿Cuántas horas dura una jornada laboral estándar completa en un formato semanal de 40 horas en España?",
+    "respuesta": "8"
+  },
+  {
+    "id": 66,
+    "pregunta": "¿Cuántas episodios tiene la primera temporada de la serie Stranger Things en Netflix?",
+    "respuesta": "8"
+  },
+  {
+    "id": 67,
+    "pregunta": "¿Cuántas islas principales forman el archipiélago de Japón?",
+    "respuesta": "4"
+  },
+  {
+    "id": 68,
+    "pregunta": "¿Cuántos metros de longitud tiene una piscina de competición de curso corto (piscina corta)?",
+    "respuesta": "25"
+  },
+  {
+    "id": 69,
+    "pregunta": "¿Cuántos tentáculos tiene un calamar gigante adulto (incluyendo sus dos largos tentáculos de captura)?",
+    "respuesta": "10"
+  },
+  {
+    "id": 70,
+    "pregunta": "¿Cuántos años duró la construcción de la Sagrada Família desde su primera piedra (1882 hasta estimación actual)?",
+    "respuesta": "144"
+  },
+  {
+    "id": 71,
+    "pregunta": "¿Cuántos kilómetros de longitud tiene el río Nilo, considerado tradicionalmente el más largo del mundo?",
+    "respuesta": "6650"
+  },
+  {
+    "id": 72,
+    "pregunta": "¿Cuántas copas del mundo de la FIFA ha ganado la selección masculina de fútbol de Brasil?",
+    "respuesta": "5"
+  },
+  {
+    "id": 73,
+    "pregunta": "¿Cuántos libros componen la saga literaria de fantasía Canción de Hielo y Fuego publicada hasta la fecha?",
+    "respuesta": "5"
+  },
+  {
+    "id": 74,
+    "pregunta": "¿Cuántas teclas tiene un teclado de ordenador QWERTY estándar en español (con sección numérica)?",
+    "respuesta": "105"
+  },
+  {
+    "id": 75,
+    "pregunta": "¿Cuántos jugadores componen un equipo titular en el campo en un partido de baloncesto FIBA?",
+    "respuesta": "5"
+  },
+  {
+    "id": 76,
+    "pregunta": "¿Cuántos metros mide la cascada del Salto Ángel en Venezuela (la más alta del mundo ininterrumpida)?",
+    "respuesta": "979"
+  },
+  {
+    "id": 77,
+    "pregunta": "¿Cuántos voltios tiene habitualmente la corriente eléctrica doméstica estándar en los enchufes de España y Europa?",
+    "respuesta": "230"
+  },
+  {
+    "id": 78,
+    "pregunta": "¿Cuántos mililitros contiene una botella estándar de vino comercial en el mercado internacional?",
+    "respuesta": "750"
+  },
+  {
+    "id": 79,
+    "pregunta": "¿Cuántos países forman parte actualmente de la Unión Europea?",
+    "respuesta": "27"
+  },
+  {
+    "id": 80,
+    "pregunta": "¿Cuántos millones de años se estima que se extinguió el dinosaurio no aviano tras el impacto de un asteroide?",
+    "respuesta": "66"
+  },
+  {
+    "id": 81,
+    "pregunta": "¿Cuántos metros de altitud tiene la cima del monte Everest sobre el nivel del mar?",
+    "respuesta": "8848.86"
+  },
+  {
+    "id": 82,
+    "pregunta": "¿Cuántos días dura el mes de febrero en un año bisiesto?",
+    "respuesta": "29"
+  },
+  {
+    "id": 83,
+    "pregunta": "¿Cuántos puntos vale anotar un ensayo básico en un partido de rugby sin transformación posterior?",
+    "respuesta": "5"
+  },
+  {
+    "id": 84,
+    "pregunta": "¿Cuántas sinfonías completas compuso el célebre músico Ludwig van Beethoven?",
+    "respuesta": "9"
+  },
+  {
+    "id": 85,
+    "pregunta": "¿Cuántos kilómetros cuadrados tiene aproximadamente la superficie total de España?",
+    "respuesta": "505990"
+  },
+  {
+    "id": 86,
+    "pregunta": "¿Cuántos gramos pesa una tableta de chocolate estándar comercial clásica en España?",
+    "respuesta": "100"
+  },
+  {
+    "id": 87,
+    "pregunta": "¿Cuántas horas tiene exactamente un año común no bisiesto?",
+    "respuesta": "8760"
+  },
+  {
+    "id": 88,
+    "pregunta": "¿Cuántos títulos de campeón de la NBA tiene la franquicia de baloncesto Boston Celtics?",
+    "respuesta": "18"
+  },
+  {
+    "id": 89,
+    "pregunta": "¿Cuántos milímetros mide el grosor estándar de una tarjeta de crédito o débito según la norma ISO/IEC 7810?",
+    "respuesta": "0.76"
+  },
+  {
+    "id": 90,
+    "pregunta": "¿Cuántas estrellas principales componen la constelación de la Cruz del Sur?",
+    "respuesta": "4"
+  },
+  {
+    "id": 91,
+    "pregunta": "¿Cuántos estados componen actualmente los Estados Unidos de América?",
+    "respuesta": "50"
+  },
+  {
+    "id": 92,
+    "pregunta": "¿Cuántos metros cuadrados tiene una cancha de baloncesto oficial cubierta según la normativa de la FIBA?",
+    "respuesta": "420"
+  },
+  {
+    "id": 93,
+    "pregunta": "¿Cuántos jugadores forman un equipo titular en el terreno de juego en un partido de béisbol?",
+    "respuesta": "9"
+  },
+  {
+    "id": 94,
+    "pregunta": "¿Cuántos satélites artificiales activos e inactivos orbitan aproximadamente la Tierra (estimación actual)?",
+    "respuesta": "8000"
+  },
+  {
+    "id": 95,
+    "pregunta": "¿Cuántos kilómetros de longitud tiene el Canal de Panamá que conecta el Atlántico y el Pacífico?",
+    "respuesta": "82"
+  },
+  {
+    "id": 96,
+    "pregunta": "¿Cuántos mililitros de tinta contiene habitualmente un bolígrafo convencional tipo Bic Cristal nuevo?",
+    "respuesta": "2"
+  },
+  {
+    "id": 97,
+    "pregunta": "¿Cuántos días dura el festival tradicional de la Tomatina en Buñol (Valencia)?",
+    "respuesta": "1"
+  },
+  {
+    "id": 98,
+    "pregunta": "¿Cuántos planetas forman oficialmente el sistema solar desde la redefinición de 2006?",
+    "respuesta": "8"
+  },
+  {
+    "id": 99,
+    "pregunta": "¿Cuántos escalones mecánicos o tramos de escaleras tiene la Torre de Hércules en La Coruña para subir?",
+    "respuesta": "234"
+  },
+  {
+    "id": 100,
+    "pregunta": "¿Cuántos años cumplió la compañía Walt Disney desde su fundación en 1923 hasta el año 2023?",
+    "respuesta": "100"
+  },
+  {
+    "id": 101,
+    "pregunta": "¿Cuántos huesos os habéis roto entre todos los miembros del grupo?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 102,
+    "pregunta": "¿Cuántos tatuajes tenéis visibles o no visibles entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 103,
+    "pregunta": "¿Cuántos países diferentes habéis visitado sumando las experiencias de todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 104,
+    "pregunta": "¿Cuántas mascotas vivas tenéis actualmente en vuestras casas entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 105,
+    "pregunta": "¿Cuántas lenguas o idiomas diferentes sois capaces de hablar o defenderos entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 106,
+    "pregunta": "¿Cuántos hermanos y hermanas tenéis sumando a todos los integrantes?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 107,
+    "pregunta": "¿Cuántas veces habéis volado en avión entre todos a lo largo de vuestras vidas?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 108,
+    "pregunta": "¿Cuántos pares de zapatillas o calzado deportivo tenéis en casa en total?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 109,
+    "pregunta": "¿Cuántos conciertos o festivales de música habéis presenciado en directo entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 110,
+    "pregunta": "¿Cuántos libros enteros habéis leído voluntariamente en los últimos doce meses entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 111,
+    "pregunta": "¿Cuántas cicatrices visibles tenéis en el cuerpo sumando a todo el grupo?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 112,
+    "pregunta": "¿Cuántos instrumentos musicales sabéis tocar o habéis tocado alguna vez entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 113,
+    "pregunta": "¿Cuántas horas de sueño acumuláis en una noche normal sumando las de todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 114,
+    "pregunta": "¿Cuántas veces habéis cambiado de domicilio o de casa a lo largo de vuestras vidas entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 115,
+    "pregunta": "¿Cuántas tazas de café o bebidas con cafeína consumís a la semana entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 116,
+    "pregunta": "¿Cuántos videojuegos habéis completado al 100% entre todos los presentes?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 117,
+    "pregunta": "¿Cuántos kilómetros a pie habéis recorrido haciendo senderismo o rutas entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 118,
+    "pregunta": "¿Cuántas veces os habéis quedado encerrados en un ascensor entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 119,
+    "pregunta": "¿Cuántas asignaturas suspensas habéis tenido a lo largo de vuestra vida académica entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 120,
+    "pregunta": "¿Cuántas aplicaciones móviles diferentes tenéis instaladas en vuestros teléfonos en total?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 121,
+    "pregunta": "¿Cuántos deportes distintos habéis practicado en competición o federados entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 122,
+    "pregunta": "¿Cuántas horas de series o películas veis a la semana sumando a todo el grupo?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 123,
+    "pregunta": "¿Cuántas veces habéis perdido el autobús, el tren o un vuelo entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 124,
+    "pregunta": "¿Cuántos carnés, tarjetas de transporte o identificaciones lleváis en vuestras carteras en total?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 125,
+    "pregunta": "¿Cuántas plantas tenéis cuidadas en vuestras casas o habitaciones entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 126,
+    "pregunta": "¿Cuántas veces os habéis teñido el pelo de un color fantasía (azul, rosa, verde, etc.) entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 127,
+    "pregunta": "¿Cuántas visitas al dentista os habéis hecho en el último año entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 128,
+    "pregunta": "¿Cuántos kilómetros hay en total desde el lugar de nacimiento de cada uno hasta aquí?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 129,
+    "pregunta": "¿Cuántos idiomas de programación o informática conocéis entre todos?",
+    "respuesta": "PENDIENTE"
+  },
+  {
+    "id": 130,
+    "pregunta": "¿Cuántos mensajes de texto o chats sin leer tenéis ahora mismo acumulados entre todos?",
+    "respuesta": "PENDIENTE"
+  }
+]
